@@ -1,0 +1,97 @@
+.loggedIn-menu {
+    width: max-content;
+    display: flex;
+    padding-right: 40px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#welcome-user {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+#user-icon {
+    color: var(--font-color);
+    background-color: var(--secondary);
+    font-size: 20px;
+    font-weight: 700;
+    font-style: bold;
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0px;
+}
+
+#greeting {
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    line-height: 18.75px;
+}
+
+#hello {
+    color: var(--tertiary);
+}
+
+#user-name {
+    color: var(--primary); 
+    margin: 0   
+}
+
+.close-icon {
+    font-size: 22px;
+    font-style: bold;
+    color: var(--secondary);
+    padding-bottom: 1.5em;
+    cursor: pointer;
+}
+
+.user-panels {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: max-content;
+    margin-right: 10px;
+}
+
+.admin-icon {
+    font-size: 37px;
+    color: var(--secondary);
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+.user-icon {
+    font-size: 30px;
+    color: var(--secondary);
+    margin-right: 5px;
+}
+
+/*---------  RESPONSIVE ---------*/
+/* tablet version */
+@media screen and (max-width: 768px){
+    .loggedIn-menu {
+        padding-right: 32px;
+    }
+}
+
+/* mobile version */
+@media screen and (max-width: 500px) {
+    .loggedIn-menu {
+        display: none;
+    }
+
+    .close-icon {
+        font-size: 20px;
+        color: white;
+        padding: 12px;
+    }
+}

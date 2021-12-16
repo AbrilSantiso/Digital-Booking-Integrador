@@ -1,0 +1,157 @@
+/* mobile version */
+/*---------  General Menu ---------*/
+.menu-container {
+  width: 80%;
+  height: 100vh;
+  background-color: var(--background-card);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -100%;
+  z-index: 20;
+}
+
+/*---------  Top Menu ---------*/
+.top-menu {
+  background-color: var(--primary);
+  color: var(--background-card);
+  height: 25%;
+  position: relative;
+}
+
+.menu-text {
+  font-size: 2rem;
+  position: absolute;
+  right: 5%;
+  bottom: 3%;
+}
+
+/*---------  Top Menu LOGGED ---------*/
+#user-icon-menu-logged {
+  background-color: var(--background-card);
+  color: var(--tertiary);
+  font-size: 1.8rem;
+  font-weight: 700;
+  height: 37px;
+  width: 37px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  position: absolute;
+  right: 5%;
+  top: 35%;
+}
+  
+#user-name-menu-logged {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 2px 0px;
+  color: var(--secondary);
+  position: absolute;
+  right: 5%;
+  top: 82%;
+}
+  
+#greeting-logged {
+  position: absolute;
+  font-weight: 700;
+  right: 5%;
+  top: 70%;
+  font-size: 1.4rem;
+}
+
+.user-panels-mobile {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  width: max-content;
+  margin: 10px;
+}
+
+/*---------  User-icon ---------*/
+.user-icon-burger-menu {
+  font-size: 27px;
+  color: var(--secondary);
+  margin-top: 1.5px;
+  margin-right: 15px;
+}
+
+/*---------  User-admin-icon ---------*/
+.admin-icon-burger-menu {
+  font-size: 32.5px;
+  color: var(--secondary);
+  margin-right: 5px;
+}
+
+/*---------  Bottom menu ---------*/
+.bottom-menu {
+  color: var(--secondary);
+  height: 75%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+  
+.line {
+  border-top: 1px solid var(--tertiary);
+  align-self: center;
+  width: 93%;
+  margin: 5px;
+}
+  
+.bottom-menu-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 20px 10px;
+  text-decoration: none;
+  color: var(--secondary);
+}
+  
+.bottom-menu-text:hover {
+  color: var(--primary);
+}
+  
+.bottom-menu-text:visited {
+  color: var(--primary);
+  opacity: 0.5;
+}
+  
+/*---------  Bottom Menu LOGGED ---------*/
+.bottom-menu-logged-text {
+  font-size: 1.3rem;
+  font-weight: 700;
+  position: absolute;
+  bottom: 18%;
+  right: 5%;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+  
+.link-log-out {
+  color: var(--primary);
+}
+  
+.line-logged {
+  position: absolute;
+  bottom: 17%;
+}
+  
+/*---------  Footer Menu ---------*/
+.footer-menu {
+  color: var(--tertiary);
+  font-size: 2.4rem;
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-menu i {
+  padding: 9px;
+}
+
+

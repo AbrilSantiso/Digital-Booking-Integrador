@@ -1,0 +1,30 @@
+.nav-bar {
+    display: none;
+}
+
+/*---------  RESPONSIVE ---------*/
+/* tablet version */
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .hamburguer-menu-icon {
+        color: var(--tertiary);
+        font-size: 27px;
+        margin: 0 15px;
+    }
+}
+
+/* mobile version */
+@media screen and (max-width: 500px) {
+    .nav-bar {
+        display: inline-block;
+        cursor: pointer;
+        border: none;
+    }
+
+    button {
+        background-color: transparent;
+    }
+}

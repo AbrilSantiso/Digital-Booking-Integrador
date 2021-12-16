@@ -1,0 +1,73 @@
+header {
+    background-color: var(--background-card);
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 300;
+    box-shadow: 0 3px 5px -2px var(--tertiary);
+}
+  
+.logo {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 4rem;
+}
+  
+.logo img {
+    max-width: 17.5rem;
+    padding-top: 0.5rem;
+}
+  
+.slogan {
+    font-style: italic;
+    color: var(--tertiary);
+    font-weight: 300;
+    font-size: 2rem;
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    margin-left: 10px;
+}
+  
+.button-nav {
+    width: 50%;
+    display: flex;
+    padding-right: 4rem;
+    justify-content: flex-end;
+}
+
+/*---------  RESPONSIVE ---------*/
+
+/* tablet version */
+@media screen and (max-width: 860px) {
+    .logo {
+        padding-left: 3rem;
+    }
+
+    .slogan {
+        display: none;
+    }
+
+    .button-nav {
+        padding-right: 3rem;
+    }
+}
+
+/* mobile version */
+@media screen and (max-width: 500px){
+    .button-nav {
+        display: none;
+    }
+
+    .logo {
+        padding-left: 1rem;
+    }
+}

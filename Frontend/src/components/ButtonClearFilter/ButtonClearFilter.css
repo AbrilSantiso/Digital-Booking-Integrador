@@ -1,0 +1,36 @@
+.clear-filter {
+    background-color: var(--tertiary);
+    color: var(--font-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 7px;
+    width: 15rem;
+    height: 4rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.clear-filter:hover {
+    background-color: var(--secondary);
+}
+
+/*---------  RESPONSIVE ---------*/
+/* mobile version */
+@media screen and (max-width: 767px) {
+    .clear-filter {
+        background-color: var(--primary);
+        width: 13rem;
+    }
+    
+    .clear-filter:hover {
+        background-color: rgba(29, 190, 180, 0.7);
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .clear-filter {
+        width: 11rem;
+    }
+}

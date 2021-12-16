@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "ae30769f-8846-45b4-96f1-8198ea63674f",
+		"name": "Images",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "allImages",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://digitalbooking.xyz:8081/images/all",
+					"protocol": "http",
+					"host": [
+						"digitalbooking",
+						"xyz"
+					],
+					"port": "8081",
+					"path": [
+						"images",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveImage",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://digitalbooking.xyz:8081/images",
+					"protocol": "http",
+					"host": [
+						"digitalbooking",
+						"xyz"
+					],
+					"port": "8081",
+					"path": [
+						"images"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://digitalbooking.xyz:8081/images/1",
+					"protocol": "http",
+					"host": [
+						"digitalbooking",
+						"xyz"
+					],
+					"port": "8081",
+					"path": [
+						"images",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateImage",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://digitalbooking.xyz:8081/images",
+					"protocol": "http",
+					"host": [
+						"digitalbooking",
+						"xyz"
+					],
+					"port": "8081",
+					"path": [
+						"images"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteImage",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://digitalbooking.xyz:8081/images/1",
+					"protocol": "http",
+					"host": [
+						"digitalbooking",
+						"xyz"
+					],
+					"port": "8081",
+					"path": [
+						"images",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

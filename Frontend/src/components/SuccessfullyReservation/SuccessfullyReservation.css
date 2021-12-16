@@ -1,0 +1,39 @@
+.swal2-popup {
+    width: 60rem !important;
+    min-height: 40rem !important;
+}
+
+.swal2-icon {
+    margin-top: 1rem !important;
+}
+
+.popup-sweet-icon {
+    font-size: 18px;
+}
+
+.popup-title {
+    color: var(--primary) !important;;
+    font-size: 2.5rem !important;
+    font-weight: 500 !important;;
+}
+
+.popup-close-button {
+    font-size: 4rem !important;
+    color: var(--secondary) !important;
+    appearance: none !important;
+}
+
+.swal2-html-container {
+    font-size: 2rem !important;
+    font-weight: 600 !important;
+}
+
+.popup-sweet-confirm-button {
+    width: 16rem !important;
+    height: 4rem !important;
+}
+
+.swal2-styled.swal2-confirm {
+    font-size: 18px !important;
+    border: none !important;
+}

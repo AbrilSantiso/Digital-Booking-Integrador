@@ -1,0 +1,94 @@
+.search-bar {
+    width: 100%;
+    background-color: var(--tertiary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 24%;
+}
+
+#search-title {
+    font-size: 3.6rem;
+    color: var(--font-color);
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#search-bar-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1% 0;
+    height: 100%;
+    width: 70%;
+}
+
+/* Search button */
+#search-button {
+    background-color: var(--primary);
+    color: var(--font-color);
+    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 0.5rem;
+    height: 4rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    flex: 1 0 20%;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+/*---------  RESPONSIVE ---------*/
+
+/* tablet version */
+@media screen and (max-width: 768px) {
+
+    /* Solucionar sticky y que Recomendaciones no se superponga */
+    /*.search-bar {
+        position: sticky;
+        top: 0;
+    } */
+    
+    #search-title {
+        font-size: 3rem;
+        margin: 0 10px;
+    }
+
+    #search-bar-form {
+        width: calc(100% - 80px);
+    }
+}
+
+/* mobile version */
+@media screen and (max-width: 600px) {
+    .search-bar {
+        height: 23rem;
+    }
+    
+    #search-title {
+        margin: 0 1.5rem;
+        padding: 0.5rem 0.5rem 0;
+        font-size: 2.7rem;
+    }
+
+    #search-bar-form {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: calc(100% - 20px);
+        margin: 0 10px;
+    }
+
+    #search-button {
+        flex: 0 0 auto;
+        width: 100%;
+        margin-left: 0;
+    }  
+}
+
+@media (max-width: 360px) {
+    #search-title {
+        font-size: 2.5rem;
+    }
+}

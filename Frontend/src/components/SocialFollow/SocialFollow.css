@@ -1,0 +1,32 @@
+.social-follow {
+    font-size: 2rem;
+    margin-right: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icon {
+    color: var(--font-color);
+    font-size: 27px;
+    margin: 0 1rem;
+}
+
+@media screen and (max-width: 850px) {
+    .social-follow {
+        font-size: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .social-follow {
+        display: none;
+    }
+    .social-icon {
+        color: var(--tertiary);
+        font-size: 27px;
+        margin: 0 1rem;
+    }
+
+}

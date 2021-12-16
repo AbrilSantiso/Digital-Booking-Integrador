@@ -1,0 +1,23 @@
+.reservation-info {
+    background-color: var(--quaternary);
+    display: flex;
+    justify-content: space-between;
+    height: max-content;
+    padding: 0 4rem;
+}
+
+/*---------  RESPONSIVE ---------*/
+/* tablet version */
+@media screen and (max-width: 999px) {
+    .reservation-info {
+        flex-direction: column;
+        padding: 0 3rem;
+    }
+}
+
+/* mobile version */
+@media screen and (max-width: 767px) {
+    .reservation-info {
+        padding: 0 1rem;
+    }
+}

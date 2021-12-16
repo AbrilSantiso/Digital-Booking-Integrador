@@ -1,0 +1,23 @@
+.button-register {
+  background-color: var(--background-card);
+  border: solid 1px var(--primary);
+  border-radius: 6px;
+  padding: 1rem 4rem;
+  margin-left: 1rem;
+  color: var(--primary);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-register:hover {
+  background-color: var(--primary);
+  color: var(--font-color);
+}
+
+/* tablet version */
+@media screen and (max-width: 760px) {
+  .button-register {
+    padding: 1rem 2.5rem;
+    width: 13rem;
+  }  
+}

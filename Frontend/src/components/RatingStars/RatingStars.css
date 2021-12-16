@@ -1,0 +1,17 @@
+.rating-star-product {
+    color: var(--primary);
+    stroke: var(--primary);
+    stroke-width: 40px;
+    font-size: 18px;
+    padding-right: 5px;
+    padding-bottom: 4px;
+}
+
+.rating-star-reservation {
+    fill: transparent;
+    stroke: var(--primary);
+    stroke-width: 40px;
+    font-size: 18px;
+    padding-right: 5px;
+    padding-bottom: 4px;
+}

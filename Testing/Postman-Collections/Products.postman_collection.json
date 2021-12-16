@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "edfed13d-7ad3-4b96-ab0c-40b8642e57f5",
+		"name": "Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "allProducts",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://digitalbooking.xyz:8081/products/all",
+					"protocol": "http",
+					"host": [
+						"digitalbooking",
+						"xyz"
+					],
+					"port": "8081",
+					"path": [
+						"products",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Pruba en vivo\",\r\n    \"description\" : \"Descripcion de prueba\", \r\n    \"category\" : {\"id\" : 2},\r\n    \"city\" : {\"id\": 3},\r\n    \"characteristics\" : [{\"id\" : 3}, {\"id\" : 5}, {\"id\" : 6}]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://digitalbooking.xyz:8081/products",
+					"protocol": "http",
+					"host": [
+						"digitalbooking",
+						"xyz"
+					],
+					"port": "8081",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://digitalbooking.xyz:8081/products/1",
+					"protocol": "http",
+					"host": [
+						"digitalbooking",
+						"xyz"
+					],
+					"port": "8081",
+					"path": [
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upddateProduct",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://digitalbooking.xyz:8081/products",
+					"protocol": "http",
+					"host": [
+						"digitalbooking",
+						"xyz"
+					],
+					"port": "8081",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://digitalbooking.xyz:8081/products/13",
+					"protocol": "http",
+					"host": [
+						"digitalbooking",
+						"xyz"
+					],
+					"port": "8081",
+					"path": [
+						"products",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CategoryById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://digitalbooking.xyz:8081/products/category/1",
+					"protocol": "http",
+					"host": [
+						"digitalbooking",
+						"xyz"
+					],
+					"port": "8081",
+					"path": [
+						"products",
+						"category",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CityById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://digitalbooking.xyz:8081/products/city/1\n",
+					"protocol": "http",
+					"host": [
+						"digitalbooking",
+						"xyz"
+					],
+					"port": "8081",
+					"path": [
+						"products",
+						"city",
+						"1\n"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,389 @@
+{
+  "id": "af9b22c6-2be0-4683-8d57-e166ba3c9958",
+  "version": "2.0",
+  "name": "Digitalbooking",
+  "url": "http://digitalbooking.xyz",
+  "tests": [{
+    "id": "68977f33-31ce-4c5f-9b9f-ff3b44a2d0a2",
+    "name": "1.IniciarSesion",
+    "commands": [{
+      "id": "1db4a9da-ea9d-46f7-a9ef-5061fc8a4ce2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1ec8140-d0b2-4797-8e9e-7b233d172fc6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "884a487d-7a1c-4b26-b32f-4e33ee1d156f",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [],
+      "value": "pruebaselenium@gmail.com"
+    }, {
+      "id": "1ccd7d58-9bb4-429a-88e1-11d7286e1e7e",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [],
+      "value": "prueba123"
+    }, {
+      "id": "f9325bd4-d978-4f90-9164-8b57635d2b17",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sign-in-button",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "601103dc-7a71-4606-b197-30629e250497",
+    "name": "2.Iniciar&CerarSesion",
+    "commands": [{
+      "id": "eccd698c-896a-44a0-9f95-96a8502ee346",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9a9d23f-1ccc-46e8-8f3a-ece30fd6359c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f2d3c03-c84c-4043-9e26-6efbe3210928",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [],
+      "value": "pruebaselenium@gmail.com"
+    }, {
+      "id": "f58cffc2-8b30-4046-ab4b-34938640b3c8",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [],
+      "value": "prueba123"
+    }, {
+      "id": "ae57236f-ebbb-4f6b-9de3-9f9b0110f6ba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sign-in-button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5007521d-950a-4366-945a-4c8057710ecd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.close-icon",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c6ce3f29-1c69-45e0-aaec-b4536fba4e93",
+    "name": "CrearUsuario",
+    "commands": [{
+      "id": "7734c0a7-a3aa-470c-9d16-786ad04afec6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0861cedd-4e42-4807-a6d3-f78edc72500f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-register",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63f14c96-4498-4ae5-976c-19899f77d375",
+      "comment": "",
+      "command": "type",
+      "target": "css=.user-info-name",
+      "targets": [],
+      "value": "Prueba"
+    }, {
+      "id": "9d8eb121-07a3-4197-afd3-9a49e406b8d2",
+      "comment": "",
+      "command": "type",
+      "target": "css=.user-info-lastname",
+      "targets": [],
+      "value": "Selenium II"
+    }, {
+      "id": "309e1464-48d8-4fa4-9e14-628548f4e1c4",
+      "comment": "",
+      "command": "type",
+      "target": "css=.user-info-field",
+      "targets": [],
+      "value": "pruebaiiselenium@gmail.com"
+    }, {
+      "id": "bcf454fe-bef9-4425-be99-532b1f9701d7",
+      "comment": "",
+      "command": "type",
+      "target": "css=.pass-input",
+      "targets": [],
+      "value": "pruebaselenium"
+    }, {
+      "id": "ebbb8509-82be-434f-adb0-f94dc0104062",
+      "comment": "",
+      "command": "type",
+      "target": "name=confirmPassword",
+      "targets": [],
+      "value": "pruebaselenium"
+    }, {
+      "id": "bc94bff2-6cb1-4564-bbfb-1e7ec9a7acd0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sign-up-button",
+      "targets": [
+        ["css=.sign-up-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='sign-up']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Crear cuenta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a7988f4b-f39d-4173-9ca3-bb582e569a62",
+    "name": "SeleccionarCiudad",
+    "commands": [{
+      "id": "f30bb6d4-fa3f-49c8-a885-7e173af112d3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6726b08b-4680-46d6-9dd2-d799ccc6982e",
+      "comment": "",
+      "command": "click",
+      "target": "id=location-select",
+      "targets": [
+        ["id=location-select", "id"],
+        ["name=location-select", "name"],
+        ["css=#location-select", "css:finder"],
+        ["xpath=//select[@id='location-select']", "xpath:attributes"],
+        ["xpath=//form[@id='search-bar-form']/section/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b001b167-1959-45f3-8939-0c4b9db4f7fa",
+      "comment": "",
+      "command": "select",
+      "target": "id=location-select",
+      "targets": [],
+      "value": "label=Buenos Aires"
+    }, {
+      "id": "e3b25227-3bc1-44d1-aec4-30414841db44",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-button",
+      "targets": [
+        ["id=search-button", "id"],
+        ["css=#search-button", "css:finder"],
+        ["xpath=//button[@id='search-button']", "xpath:attributes"],
+        ["xpath=//form[@id='search-bar-form']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c08864f1-060c-4429-84a2-fa5298c126cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.clear-filter",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7c3e3a99-2f69-41d7-aba5-7ae92429f635",
+    "name": "RedireccionHomeCrearCuenta",
+    "commands": [{
+      "id": "69e799cc-6915-4873-8439-7cce7bcb6572",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "493827b8-6b8d-45cb-b11c-f572b9115992",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39267bf6-ee53-45f1-a603-e857c14cc3be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-register",
+      "targets": [
+        ["css=.button-register", "css:finder"],
+        ["xpath=//div[@id='root']/header/div[2]/a/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Crear cuenta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a5b917c-461b-4e23-9963-67b782db7f08",
+      "comment": "",
+      "command": "click",
+      "target": "css=img",
+      "targets": [
+        ["css=img", "css:finder"],
+        ["xpath=//img[@alt='Logo de Digital Booking']", "xpath:img"],
+        ["xpath=//div[@id='root']/header/div/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1959a45c-a4c2-4b5a-a7c3-25a6f688bf6a",
+    "name": "RedireccionHomeIniciarSesion",
+    "commands": [{
+      "id": "2e527f26-16c5-4ee0-a7d0-1baca9c2add1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16c7e6a9-a35e-4c89-9634-375c9a1b087d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87645939-f0c6-4fb4-b459-7f33c15b761a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-login",
+      "targets": [
+        ["css=.button-login", "css:finder"],
+        ["xpath=//div[@id='root']/header/div[2]/a[2]/button", "xpath:idRelative"],
+        ["xpath=//a[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Iniciar sesión')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9619f719-727e-405d-b2de-667f50d1059a",
+      "comment": "",
+      "command": "click",
+      "target": "css=img",
+      "targets": [
+        ["css=img", "css:finder"],
+        ["xpath=//img[@alt='Logo de Digital Booking']", "xpath:img"],
+        ["xpath=//div[@id='root']/header/div/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4f820ad6-588c-4b29-8bf0-02028d4290a3",
+    "name": "IniciarSesionNoRegistrado",
+    "commands": [{
+      "id": "2be063e3-8775-4048-bd8b-960a29e07aa4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76470bb5-661c-4582-9091-98d24ac9d490",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1056x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ca46c36-ada2-44d8-8978-96f949b3980b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-login",
+      "targets": [
+        ["css=.button-login", "css:finder"],
+        ["xpath=//div[@id='root']/header/div[2]/a[2]/button", "xpath:idRelative"],
+        ["xpath=//a[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Iniciar sesión')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3d89dff-27c3-4261-8e55-a07a2083d6c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.link-color",
+      "targets": [
+        ["css=.link-color", "css:finder"],
+        ["xpath=//form[@id='sign-in']/a/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Regístrate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1e744dd7-795f-40a2-8f9d-736fb066622c",
+    "name": "ContinuarLeyendo",
+    "commands": [{
+      "id": "fe1e0588-cbce-4f4a-a11b-23d8e121d6ae",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "764ad6fb-ecfa-463a-9f7c-d13deb856ddb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75429973-ff24-4b94-810e-abb874e69ea9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product-item:nth-child(1) .description-more",
+      "targets": [
+        ["css=.product-item:nth-child(1) .description-more", "css:finder"],
+        ["xpath=//div[@id='block-products-container']/div/div/div/p[2]/span", "xpath:idRelative"],
+        ["xpath=//p[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Continuar leyendo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "06c31d0f-668c-4690-a1da-3c3faf051b46",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product-item:nth-child(1) .description-more",
+      "targets": [
+        ["css=.product-item:nth-child(1) .description-more", "css:finder"],
+        ["xpath=//div[@id='block-products-container']/div/div/div/p[2]/span", "xpath:idRelative"],
+        ["xpath=//p[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ver menos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "10db50bc-73a7-4bb1-ac20-c649495de590",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://digitalbooking.xyz/"],
+  "plugins": []
+}

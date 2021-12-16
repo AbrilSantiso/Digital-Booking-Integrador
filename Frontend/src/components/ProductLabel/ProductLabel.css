@@ -1,0 +1,66 @@
+/* Lodging´s name and type */
+.product-label {
+    width: 100%;
+    background-color: var(--tertiary);
+    display: flex;
+    height: 6rem;
+    padding-left: 35px;
+    align-items: center;
+}
+
+.back {
+    width: 35px;
+    height: 35px;
+}
+
+.back-icon {
+    color: var(--font-color);
+    font-size: 35px;
+}
+
+.back-icon:hover {
+    color: var(--primary);
+}
+
+.category-and-name {
+    color: var(--font-color);
+    padding-left: 20px;
+}
+
+.product-category-detail {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.product-name-detail {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.title-admin {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--font-color);
+    padding-left: 20px;
+}
+
+/* tablet version */
+@media screen and (max-width: 1000px) {
+    .product-label {
+        justify-content: space-between;
+        padding: 0 30px 0 22px;
+    }
+
+    .category-and-name {
+        padding: 0;
+    }
+}
+
+/* mobile version */
+@media (max-width: 767px) {
+    .product-label {
+        box-shadow: 0 3px 5px -2px var(--tertiary);
+        margin-bottom: 3px;
+        padding: 0 10px;
+    }
+}

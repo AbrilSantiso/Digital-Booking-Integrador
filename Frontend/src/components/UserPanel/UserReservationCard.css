@@ -1,0 +1,132 @@
+/* Background - Title - Image */
+.user-reservation-card {
+    border-radius: 10px;
+    background-color: var(--background-card);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 49%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+  
+.user-reservation-title {
+    color: var(--secondary);
+    font-size: 2.2rem;
+    padding: 0 0 10px 20px;
+}
+  
+.user-reservation-details img {
+    width: 50%;
+    border-radius: 0 10px 10px 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+/* Reservation info */
+.user-reservation-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reservation-info-section {
+    margin: 0 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.user-reservation-info {    
+    width: 100%;
+}
+
+.user-card-category-reservation {
+    font-size: 1.5rem;
+    opacity: 0.5;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+  
+.user-card-product-reservation {
+    color: var(--secondary);
+    font-size: 2.4rem;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+  
+.user-card-location-reservation {
+    display: flex;
+    padding: 1rem 0;
+}
+  
+.location-city-reservation {
+    color: var(--secondary);
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+}
+  
+.user-card-checkin-detail {
+    width: 100%;
+    text-align: center;
+}
+  
+.divisor-line {
+    border-top: 2px solid var(--primary);
+    height: 0.3rem;
+    margin: 1rem 0;
+}
+  
+.checkin-checkout {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--secondary);
+    margin: 2rem 1rem;
+}
+  
+/*---------  RESPONSIVE ---------*/
+/* tablet version */
+@media screen and (max-width: 999px) {
+    
+    .user-reservation-card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .user-reservation-details {
+        margin-right: 0;
+    }
+}
+  
+/* mobile version */
+@media screen and (max-width: 767px) {
+    .user-reservation-title {
+        padding-left: 10px;
+    }
+
+    .user-reservation-details {
+        flex-direction: column;
+    }
+    
+    .user-reservation-details img {
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 10px;
+    }
+
+    .user-reservation-card {
+        padding: 20px 0;
+    }
+
+    .reservation-info-section {
+        width: 90%;
+    }
+
+    .user-card-checkin-detail {
+        width: auto;
+    }
+}

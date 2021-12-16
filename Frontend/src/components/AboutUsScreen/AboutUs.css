@@ -1,0 +1,96 @@
+.about-us-section { 
+    background-color: var(--quaternary);
+    color: var(--secondary);
+    height: calc(100% - 138px);
+    margin-bottom: 55px;
+}
+
+.about-us-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.logo-team-img {
+    margin: 40px 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo-img {
+    width: 28%;
+}
+
+#team-img {
+    width: 65%;
+    margin: 15px 0 10px;
+}
+
+/*---------Separation line-----------*/
+
+.about-us-line {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/*--------- Content text -----------*/
+.about-us-description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 15px 0 35px;
+    font-size: 2rem;
+}
+
+.about-us-description {
+    width: 65%;
+    margin-bottom: 12px;
+}
+
+.highlighted-word {
+    color: var(--primary);
+}
+
+.about-us-description a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+/*---------  RESPONSIVE ---------*/
+
+/*------------- Mobile version ----------------*/
+@media screen and (max-width: 600px) {
+    .about-us-section { 
+        height: calc(100% - 138px);
+        margin-bottom: 0;
+    }
+
+    .about-us-description-container {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .about-us-description {
+        width: 90%;
+        margin-bottom: 12px;
+    }
+
+    #logo-img {
+        width: 35%;
+    }
+
+    #nosotros-img {
+        width: 90%;
+    }
+}
+
+/*------------- Little smartphones version ----------------*/
+@media screen and (max-width: 360px) {
+
+    #nosotros-img{
+       max-width: 260px;
+    }
+}
+

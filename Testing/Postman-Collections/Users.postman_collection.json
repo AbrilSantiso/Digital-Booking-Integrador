@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "e5004a26-e245-4c72-826b-8d7e1af5e359",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Santiago\",\r\n    \"lastName\" : \"Garlot\",\r\n    \"email\" : \"santi@digitalbooking.xyz\",\r\n    \"password\" : \"masterpassword\",\r\n    \"roles\" : [{\"id\": 1}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://digitalbooking.xyz:8081/users/register",
+					"protocol": "http",
+					"host": [
+						"digitalbooking",
+						"xyz"
+					],
+					"port": "8081",
+					"path": [
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

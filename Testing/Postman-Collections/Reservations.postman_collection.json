@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "28497972-4c0e-4e61-ab16-4310259bf748",
+		"name": "Reservations",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Reservation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJKaG9uIiwiZXhwIjoxNjM3NzgyMzQzLCJpYXQiOjE2Mzc3NjQzNDN9.alx8GrkGSb82eilohLmepQviEtWVYxf6Zu-M4KH7qvKZYwCP3GdMxVvlZtX59WI28YCWgUmmaLxTiYds8T4NIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"hour\": \"11:27:11\",\r\n    \"startDate\": \"2021-12-23\",\r\n    \"endDate\": \"2021-12-27\",\r\n    \"product\" : {\"id\":1},\r\n    \"user\": {\"id\":1}\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://digitalbooking.xyz:8081/reservations/save",
+					"protocol": "http",
+					"host": [
+						"digitalbooking",
+						"xyz"
+					],
+					"port": "8081",
+					"path": [
+						"reservations",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "allReservations",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJKaG9uIiwiZXhwIjoxNjM3NzgyMzQzLCJpYXQiOjE2Mzc3NjQzNDN9.alx8GrkGSb82eilohLmepQviEtWVYxf6Zu-M4KH7qvKZYwCP3GdMxVvlZtX59WI28YCWgUmmaLxTiYds8T4NIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://digitalbooking.xyz:8081/reservations/all",
+					"protocol": "http",
+					"host": [
+						"digitalbooking",
+						"xyz"
+					],
+					"port": "8081",
+					"path": [
+						"reservations",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

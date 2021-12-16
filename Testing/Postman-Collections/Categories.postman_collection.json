@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "6b6c2db9-f4a9-4fbd-824f-42296b27e586",
+		"name": "Categories",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "saveCategory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Hoteles\",\n    \"description\": \"Un hotel es un establecimiento que se dedica al alojamiento de huéspedes o viajeros. El término proviene del vocablo francés hôtel, que hace referencia a una “casa adosada\",\n    \"url\":\"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/8f/13/1b/photo5jpg.jpg?w=1400&h=-1&s=1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://digitalbooking.xyz:8081/categories",
+					"protocol": "http",
+					"host": [
+						"digitalbooking",
+						"xyz"
+					],
+					"port": "8081",
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "allCategories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://digitalbooking.xyz:8081/categories/all",
+					"protocol": "http",
+					"host": [
+						"digitalbooking",
+						"xyz"
+					],
+					"port": "8081",
+					"path": [
+						"categories",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://digitalbooking.xyz:8081/categories/5",
+					"protocol": "http",
+					"host": [
+						"digitalbooking",
+						"xyz"
+					],
+					"port": "8081",
+					"path": [
+						"categories",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCategory",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"title\": \"Hotels\",\n    \"description\": \"Un hotel es un establecimiento que se dedica al alojamiento de huéspedes o viajeros. El término proviene del vocablo francés hôtel, que hace referencia a una “casa adosada\",\n    \"url\":\"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/8f/13/1b/photo5jpg.jpg?w=1400&h=-1&s=1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://digitalbooking.xyz:8081/categories",
+					"protocol": "http",
+					"host": [
+						"digitalbooking",
+						"xyz"
+					],
+					"port": "8081",
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCategory",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://digitalbooking.xyz:8081/categories/19",
+					"protocol": "http",
+					"host": [
+						"digitalbooking",
+						"xyz"
+					],
+					"port": "8081",
+					"path": [
+						"categories",
+						"19"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

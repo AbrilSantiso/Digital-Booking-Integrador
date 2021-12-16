@@ -1,0 +1,42 @@
+/* Scroll to top */
+#scroll-to-top {
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 67px;
+    right: 4px;
+    background: var(--primary);
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.icon-top {
+    color: var(--font-color);
+    margin: 0;
+    position: relative;
+    left: 0;
+    top: 0;
+    font-size: 24px;
+}
+
+.icon-top:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 500px) {
+    #scroll-to-top {
+        display: none;
+    }
+}

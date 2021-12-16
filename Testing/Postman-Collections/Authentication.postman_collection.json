@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "f05df09c-d5be-4cd2-b851-f29ba539bc2a",
+		"name": "Authentication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"Jhon\",\r\n    \"password\" : \"masterpassword\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://digitalbooking.xyz:8081/users/login",
+					"protocol": "http",
+					"host": [
+						"digitalbooking",
+						"xyz"
+					],
+					"port": "8081",
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"jhon@gmail.com\",\r\n    \"lastName\" : \"Parra\",\r\n    \"name\" : \"Jhon\",    \r\n    \"password\" : \"test12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://digitalbooking.xyz:8081/users/register",
+					"protocol": "http",
+					"host": [
+						"digitalbooking",
+						"xyz"
+					],
+					"port": "8081",
+					"path": [
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetME",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJKaG9uIiwiZXhwIjoxNjM3Nzg1MjMzLCJpYXQiOjE2Mzc3NjcyMzN9.aTheudAh4v0dLbO6b6CuLnzMLVMdYj5E1x9vM7g090gE3TX9kps0gwaICn9magNeCmRKq-_v4zu4fG86g0_mUQ",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://digitalbooking.xyz:8081/users/getMe",
+					"protocol": "http",
+					"host": [
+						"digitalbooking",
+						"xyz"
+					],
+					"port": "8081",
+					"path": [
+						"users",
+						"getMe"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,299 @@
+/* Nav Bar */
+.section-nav-bar {
+    width: 100%;
+    background-color: var(--quaternary);
+    display: flex;
+    height: max-content;
+    justify-content: flex-end;
+}
+
+.user-nav-bar {
+    list-style-type: none;
+    display: flex;
+    margin: 10px 0;
+    padding-right: 35px;
+}
+
+.user-nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.30);
+    font-weight: 600;
+    text-decoration: none;
+    width: 7rem;
+    border-radius: 50%;
+    height: 4rem;
+    border-radius: 6px;
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+.user-nav-button:hover {
+    transform: scale(1.02);
+}
+
+.user-page-icon-heart-nav {
+    width: 24px;
+    height: 25px;
+    color: var(--font-color);
+}
+
+.user-page-icon-calendar-nav {
+    width: 25px;
+    height: 25px;
+    color: var(--font-color);
+}
+
+.user-page-icon-house-nav {
+    width: 27px;
+    height: 25px;
+    color: var(--font-color);
+}
+
+/* Headings */
+.heading-user-section {
+    display: flex;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.title-user-section {
+    font-size: 2.4rem;
+    color: var(--secondary);
+}
+
+.user-cards {
+    padding: 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Empty banner section */
+.banner-empty-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    color: var(--secondary);
+}
+
+.banner-empty-icon {
+    font-size: 3.3rem;
+    color: var(--tertiary);
+    margin-bottom: 10px;
+}
+
+.banner-empty-title {
+    font-size: 2.4rem;
+}
+
+.banner-subtitle {
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+
+.to-home {
+    font-size: 1.4rem;
+    padding-top: 10px;
+    text-decoration: none;
+    color: #4285F4;
+}
+
+/* User favorites */
+.section-user-favorites {
+    padding-bottom: 20px;
+    background-color: var(--quaternary);
+}
+
+.user-page-icon-heart {
+    width: 25px;
+    height: 25px;
+    color: var(--primary);
+    margin-right: 10px;
+}
+
+/* Reservation´s history */
+.section-user-reservation {
+    width: 100%;
+    background-color: var(--quaternary);
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.user-page-icon-calendar {
+    width: 25px;
+    height: 25px;
+    color: var(--primary);
+    margin-right: 10px;
+    margin-bottom: 3px;
+}
+
+/* User contributor */
+.section-user-contributor {
+    height: max-content;
+    margin: 20px 0;
+}
+
+.user-page-icon-house {
+    width: 27px;
+    height: 25px;
+    color: var(--primary);
+    margin-right: 9px;
+    margin-bottom: 3px;
+}
+
+.contributor-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--secondary) ;
+    background-color: var(--quaternary);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-weight: 600;
+    margin: 20px auto 80px;
+    width: 40%;
+}
+
+.subtitle-user-section {
+    font-size: 2rem;
+    color: var(--secondary);
+    padding: 10px;
+}
+
+.subtitle-text {
+    font-size: 1.4rem;
+}
+
+#contributor-form {
+    padding: 20px 10px;
+    width: 100%;
+}
+
+.contributor-label {
+    color: var(--secondary);
+    font-weight: 500;
+    font-size: 1.3rem;
+    width: 65%;
+    margin: 1rem 0;
+}
+
+.contributor-input {
+    width: 100%;
+    height: 4rem;
+    color: var(--secondary) ;
+    background-color: var(--background-card);
+    border: none;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    display: block;
+    padding: 8px;
+    outline: none;
+    font-weight: 600;
+    margin: 8px 0 10px;
+}
+
+.contributor-button {
+    width: 33%;
+    height: 4rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    background-color: var(--primary);
+    color: var(--font-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    margin: 10px 15px 20px;
+}
+
+.contributor-button:hover {
+    transform: scale(1.02);
+}
+
+/*---------  RESPONSIVE ---------*/
+/* tablet version */
+@media screen and (max-width: 999px) {
+    .user-nav-bar {
+        padding-right: 20px;
+    }
+
+    .heading-user-section {
+        padding-left: 3rem;
+    }
+
+    .user-cards {
+        padding: 20px 30px;
+        flex-direction: column;
+    }
+
+    .contributor-form-container {
+        width: 65%;
+    }
+
+    .section-user-contributor {
+        height: max-content;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .user-nav-bar {
+        padding-right: 5px;
+    }
+
+    .user-nav-button {
+        width: 6rem;
+        height: 3.5rem;
+    }
+        
+    .user-page-icon-heart-nav {
+        width: 23px;
+    }
+    
+    .user-page-icon-calendar-nav {
+        width: 23px;
+    }
+    
+    .user-page-icon-house-nav {
+        width: 25px;
+    }
+
+    .heading-user-section {
+        padding-left: 1rem;
+    }
+
+    .user-cards {
+        padding: 20px 10px;
+    }
+
+    .banner-empty-title {
+        font-size: 2.1rem;
+    }
+
+    .banner-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .section-user-favorites {
+        padding-top: 15px;
+    }
+
+    .contributor-form-container {
+        width: 95%;
+    }
+
+    #contributor-form {
+        padding-bottom: 0;
+    }
+
+    .contributor-button {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,29 @@
+.button-reservation {
+    width: 80%;
+    height: 4.5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    background-color: var(--primary);
+    color: var(--font-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    margin: 10px 15px 20px;
+}
+
+/*---------  RESPONSIVE ---------*/
+/* tablet version */
+@media screen and (max-width: 999px) {
+    .button-reservation {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .button-reservation {
+        width: 100%;
+        margin: 10px 0 20px;
+    }
+}
